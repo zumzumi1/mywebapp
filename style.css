@@ -1,0 +1,104 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    background-color: rgb(250, 232, 255);
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe3e3;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.con {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 82.5px 10px 0 10px; /* 상단 여백 제거하고, 하단에는 여백 추가 */
+    height: calc(100vh - 82.5px); /* 상단바 높이를 고려하여 높이 조정 */
+}
+
+.abc{
+    display: flex;
+    height: calc(100vh - 145px); /* abc div의 높이를 100%로 설정하여 con div에 맞춤 */
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.control a, button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
+    padding: 0 0 0 16px;
+    background-color: rgb(237, 255, 249);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.list {
+    width: 200px;
+    padding: 0 0 0 10px;
+    overflow-y: auto;
+    height: calc(100vh - 145px);
+    /*list의높이를100%로설정하여abcdiv에맞춤*/background-color: #ffffea;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.list ol {
+    padding-left: 20px;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer
+}
